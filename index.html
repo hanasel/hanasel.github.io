@@ -3,31 +3,58 @@
 <head>
 	<link rel="stylesheet" href="style.css">
 	<title>30 Minute Film Festival</title>
+	<link rel="icon" href="paw.png">
 </head>
 <body>
-	<h1>Campus Cats</h1>
 
-	<div class="centered">
-	<ul><!--Navigation bar-->
-		<li><a href="#about">About Us</a></li> 
-		<li><a href="#video">Video</a></li> 
-		<li><a href="#highlights">Highlights</a></li> 
-	</ul>
+	<div class="backgroundimg">
+		<ul class="centered vertical-margins"><!--Navigation bar-->
+			<li><a href="#about">About Us</a></li> 
+			<li><a href="#video">Video</a></li> 
+			<li><a href="#highlights">Highlights</a></li> 
+		</ul>
+
+		<div class="header">
+			<div class="centered" style="width: 840px;">
+				<img src="paw.png" height="100" width="100" style="display: inline-block;">
+				<h1 style="display: inline-block;">&nbsp Campus Cats &nbsp</h1>
+				<img src="paw.png" height="100" width="100" style="display: inline-block;">
+			</div>
+		</div>
 	</div>
-	<video width="800" controls class="centered vertical-margins" id="video">
-		<source src="campuscats.MOV" type="video/mp4">
-	</video>
-	<div class="text-info centered vertical-margins" id="about">
-		<h2>Who are we?</h2>
-		<p>We are the creators of the video.</p>
+
+	<img src="linerlong.png" id="video" style="margin: 0; width: 100%">
+
+	<iframe width="800" height="450" class="centered large-margins video-border" src="https://www.youtube.com/embed/vy9YFVbEBZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+	<img src="linerlong.png" style="margin: 0; width: 100%">
+
+	<div style="width: 100%; background-color: white; padding: 50px;">
+
+	<div class="text-info centered small-margins" id="about">
+		<div class="text-padding">
+			<h2>Who are we?</h2>
+			<p>The creators of this video are Hana Selmani and Mbebo Nonna. We are students at New York University Abu Dhabi, and we are currently taking a class called Communications Lab. We created this video as an assignment for this class - we were challenged to plan, film and edit this video in 30 minutes. Neither of us have any film-making or video editing experience, so this was a very interesting challenge to take on. We used iMovie for iPhone to edit this video, hence the very simplistic editing, and the standard iMovie music library background music.</p>
+		</div>
 	</div>
-	<div class="text-info centered vertical-margins">
-		<h2>Our mission</h2>
-		<p>We want to tell the story of our campus cats.</p>
+	<div class="text-info centered small-margins">
+		<div class="text-padding">
+			<h2>Our mission</h2>
+			<p>Our campus is small, secluded, and home to many stray cats. There is a group of volunteers on campus who took in these stray cats and medicate, house and feed the cats. These cats bring us a lot of joy on a regular basis. Being university students or researchers, we are under a lot of stress and pressure, and having furry little friends all around us helps lift our moods. With this video we wanted to show how adorable these cats are and how they live their lives on campus, and we approached this with a lot of humor. We had a lot of fun with the captions, sound effects and dramatic music. If you want to see more of our campus cats, check out the NYUAD campus cats instagram pages: <a href="https://www.instagram.com/campus.cats/">@campus.cats</a> and <a href="https://www.instagram.com/campuscatsnyuad/">@campuscatsnyuad</a>.</p>
+		</div>
 	</div>
-	<div id="highlights">
+
+	</div>
+
+	<img src="linerlong.png" style="margin: 0; width: 100%">
+
+	<div id="highlights" class="large-margins">
 		<h2 style="text-align: center;">Video Highlights</h2>
-		<img src="parkour.png" width="700" class="centered vertical-margins">
+		<p style="text-align: center;">Click on the image to see more!</p>
+		<img src="0.png" width="700" id="image" class="centered vertical-margins video-border" onclick="changeImage()">
+		<script src="myscript.js" type="text/javascript"></script>
 	</div>
+
+	<img src="footer.png" style="margin: 0; width: 100%">
 </body>
 </html>
