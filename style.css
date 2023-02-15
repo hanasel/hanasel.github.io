@@ -1,3 +1,9 @@
+/*
+Hana Selmani
+15/02/2023
+Campus Cats Website - css file
+*/
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,6 +18,7 @@ h1 {
 	text-align: center;
 }
 
+/*navigation bar*/
 ul {
   	list-style-type: none;
   	margin: 0;
@@ -24,6 +31,7 @@ li {
 	float: left;
 }
 
+/*individual nav bar buttons*/
 li a {
 	text-decoration: none;
   	display: block;
@@ -31,19 +39,18 @@ li a {
   	margin: 8px;
   	text-align: center;
   	background-color: #eca38d;
-    /*#d28a3f;*/
   	color: black;
   	border: 5px solid #c57462;
-    /*#a9652e;*/
-    /*#c16011;*/
   	border-radius: 8px;
     transition-duration: 0.3s;
 }
 
+/*hover effect*/
 li a:hover {
   background-color: #c57462;
 }
 
+/*class to center items*/
 .centered {
 	display: block;
   margin-left: auto;
@@ -60,10 +67,9 @@ li a:hover {
   margin-bottom: 100px;
 }
 
+/*decoration for the text sections*/
 .text-info {
-  /*letter-spacing: 1px;*/
   line-height: 1.5;
-	/*border: 5px dashed #c57462;*/
 	background-color: #b0c7be;
 	width: 800px;
 	height: auto;
@@ -77,6 +83,7 @@ li a:hover {
   padding-bottom: 40px;
 }
 
+/*header decorations*/
 .header {
   color: #c16011;
   text-shadow: 2px 2px #856949;
@@ -88,6 +95,7 @@ li a:hover {
   margin:0;
 }
 
+/*header background image*/
 .backgroundimg {
   background-image: url(headerbg.png);
   background-repeat: no-repeat;
