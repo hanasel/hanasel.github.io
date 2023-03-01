@@ -1,0 +1,141 @@
+/* Set the height of the HTML element to 100%, hide horizontal overflow, and set font family to Times New Roman */
+html{
+	height: 100%;
+	overflow-x: hidden;
+	font-family: "Times New Roman", Times, serif;
+}
+
+/* Set the height of the body element to 100% and remove margin */
+body{
+	height: 100%;
+	margin: 0px;
+}
+
+/* Set the position of the navigation bar */
+#nav{
+    position: fixed;
+    left: calc(50% - 100px);
+    top: 20px;
+    z-index: 1;
+}
+
+/* Style the navigation buttons */
+.nav-btn{
+	width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid black;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+/* Change the background color of a navigation button on hover */
+.nav-btn:hover{
+	background-color: black;
+}
+
+/* Style the painting sections with parallax effect */
+.painting {
+	height: 100%;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+/* Set the background image for the introduction section */
+#intro{
+	background-image: url('mountain.jpeg');
+}
+
+/* Style the title */
+#header {
+	font-size: 50px;
+	width: 57%;
+	position: absolute;
+  	top: 30%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	background: rgba(255, 255, 255, 0.7);
+  	padding: 10px;
+  	border-radius: 10px;
+}
+
+/* Set the background image for the bedroom section */
+#bedroom{
+	background-image: url('bedroom.jpeg');
+}
+
+/* Set the background image for the view section */
+#view{
+	background-image: url('view.jpeg');
+}
+
+/* Set the background image for the farmers section */
+#farmers{
+	background-image: url('farmers.jpg');
+}
+
+/* Set the background image for the starry night section */
+#starry{
+	background-image: url('starrynight.jpeg');
+}
+
+/* Set the background image for the cafe section */
+#cafe{
+	background-image: url('cafe.jpeg');
+}
+
+/* Style the speech bubble */
+#bubble-div{
+    position: relative;
+    width: 200px;
+    text-align: center;
+    top: calc(100% - 400px);
+    left: calc(100% - 550px);
+}
+
+/* Style the speech bubble */
+#bubble{
+	width: 200px;
+	margin-top: 25px;
+}
+
+/* Style the bubble text */
+#bubble-text {
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+/* Set the position of the Vincent van Gogh image container to fixed, align it to the bottom, and position it on the right side of the page */
+#vincent-div{
+	position: fixed;
+	bottom: -10px;
+	left: 70%;
+	width: 400px;
+	text-align: center;
+}
+
+/* Style the Vincent van Gogh image */
+#vincent{
+	width: 400px;
+	margin-top: 18px;
+}
+
+/* Style the text sections */
+.text-section{
+	height: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Style the text in the sections */
+.text{
+	font-size: 20px;
+	line-height: 170%;
+	width: 70%;
+}
