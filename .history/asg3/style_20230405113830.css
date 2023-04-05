@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'domino';
+    background-color: #e1e1e1;
+}
+  
+img {
+    border-radius: 1.5vw;
+    position: absolute;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+  
+.page {
+    padding: 2%;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+    background-color: #e1e1e1;
+}
+
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 10px, 0);
+    }
+}
