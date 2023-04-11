@@ -1,18 +1,19 @@
+
 body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: 'domino';
-    background-color: #e1e1e1;
+    background-color: #211301;
+    font-family: "Georgia", Times, serif;
 }
   
-img {
+#slideshow {
     border-radius: 1.5vw;
-    position: absolute;
+    /* position: absolute;  */
     padding: 0;
     display: block;
     margin: 0 auto;
-    max-height: 100%;
+    height: 100%;
     max-width: 100%;
 }
   
@@ -24,11 +25,88 @@ img {
     background-color: #e1e1e1;
 }
 
-@keyframes bounce {
+#page-1 {
+    background-image: url(imgs/bg3.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+
+#page-2 {
+    background-image: url(imgs/bg2.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#page-3 {
+    background-image: url(imgs/OutroPage.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+/* @keyframes bounce {
     from {
         transform: translate3d(0, 0, 0);
     }
     to {
         transform: translate3d(0, 10px, 0);
     }
+} */
+
+
+#p1 {
+    position: absolute;
+    /* margin-top: 20%; */
+    font-size: 60px;
+    padding: 40px;
+    border-radius: 10px;
+    color: #fbe2aa;
+    text-shadow: 3px 3px black;
+    /* background-color: rgba(0, 0, 0, .50); */
+    width: 57%;
+    right: 18%; 
+    top: 31%;
+}
+
+#p2 {
+    position: absolute;
+    right: 43%; 
+    top: 10%;
+    font-size: 40px;
+    color: #fbe2aa;
+}
+
+#p3 {
+    position: absolute;
+    left: 28%; 
+    top: 40%;
+    color: #fbe2aa;
+    font-size: 40px;
+}
+
+#p4 {
+    position: absolute;
+    left: 28%; 
+    top: 60%;
+    color: #fbe2aa;
+    font-size: 40px;
+}
+
+#p5 {
+    position: absolute;
+    right: 28%; 
+    top: 40%;
+    color: #fbe2aa;
+    font-size: 40px;
+}
+
+#p6 {
+    position: absolute;
+    right: 28%; 
+    top: 60%;
+    color: #fbe2aa;
+    font-size: 40px;
 }

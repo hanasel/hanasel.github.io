@@ -2,12 +2,13 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Sounds of Ramadan</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <section class="page" id="page-1">
-            <h1 id="quote1">The Sounds of Ramadan</h1>  
+            <h1 id="p1">The Sounds of Ramadan</h1>  
               <!-- bottle img should be a button
             <img id="bottle-pic" src="./photos/normalbottle.png">
             <audio id="crinkle">
@@ -19,22 +20,35 @@
     
         <!-- section containing elements of the second page -->
         <section class="page" id="page-2">
-            <p id="placeholder-1"></p>
-            <blockquote id="quote2">Scroll to Throw</blockquote>
-            <img id="scroll-button" src="photos/scrollButton.png"></img>
-            <img id="grassground" src="./photos/grass ground.png">       
+            <!-- <p id="p2">Click to Play</p> -->
+            <audio id="myAudio" src="imgs/asg2.mp3"></audio>
+            <img id="slideshow" src="imgs/playbtn.png"></img>
+          
+            <!-- <img id="grassground" src="./photos/grass ground.png">       
             <img id="crushedbottle-pic" src="./photos/bottle-laying.png">
             <audio id="whoosh">
                 <source src="sounds/whoosh.mp3" type="audio/mpeg">
-            </audio>
+            </audio> -->
             
         </section>
     
         <!-- section containing elements of the third page -->
         <section class="page" id="page-3">
-            <img class="city" id="city-background" src="./photos/background for cities.png">
-            <img class="city" id="city1" src="./photos/modern city.png">
-            <blockquote id="quote3" class="textbox">Oh no, where am I? This place is so smelly. I don't like it here. Why did someone throw me away?  </blockquote>
-            <img class="show-button" id="button1" onclick="addtext1()" src="./photos/button.png">
+            <p id="p2" class="textbox">Created By:</p>
+            <p id="p3" class="textbox">Majid Ibrahim</p>
+            <p id="p4" class="textbox">Hana Selmani</p>
+            <p id="p5" class="textbox">Mira Saleh</p>
+            <p id="p6" class="textbox">Aiya Sartbayeva</p>
+            <!-- <img class="show-button" id="button1" onclick="addtext1()" src="./photos/button.png"> -->
         </section>
+
+        <!-- Greensock and Scrollmagic libraries -->
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+
+        <!-- p5.js library -->
+        <script type="text/javascript" src="slideshow.js"></script>
     </body>
