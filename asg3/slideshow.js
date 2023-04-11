@@ -37,7 +37,7 @@ function updatePercentage() {
 
 
 //create an array of images to be used in the slideshow 
-const images = ["imgs/1.jpeg","imgs/2.jpg","imgs/3.jpeg","imgs/4.jpeg","imgs/familyiftar.png","imgs/6.jpeg", "imgs/7-duaa.png", "imgs/8.jpeg","imgs/9.jpeg","imgs/familyiftar.png", "imgs/Walkinghome.png","imgs/Muslim-Praying.jpg","imgs/Fatiha1.png", "imgs/Fatiha2.png","imgs/Walkinghome.png","imgs/TV.png"];
+const images = ["imgs/1.jpeg","imgs/2.jpg","imgs/3.jpeg","imgs/4.jpeg","imgs/familyiftar.png","imgs/6.jpeg", "imgs/7-duaa.png", "imgs/8.jpg","imgs/9.jpeg","imgs/familyiftar.png", "imgs/Walkinghome.png","imgs/Muslim-Praying.jpg","imgs/Fatiha1.png", "imgs/Fatiha2.png","imgs/Walkinghome.png","imgs/TV.png"];
 //create a times array to store the time duration of each image
 const times = [250, 4000, 3000, 13000, 7000, 5000, 9000, 12000, 5000, 4000, 26000, 8000, 8500, 12000, 25000, 14000, 28000];
 //create a variable to keep track of the current image
