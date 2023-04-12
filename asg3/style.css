@@ -58,17 +58,18 @@ body {
 
 
 #p1 {
-    position: absolute;
-    /* margin-top: 20%; */
+    /* position: absolute; */
+    text-align: center;
+    margin-top: 20%;
     font-size: 60px;
     padding: 40px;
     border-radius: 10px;
     color: #fbe2aa;
     text-shadow: 3px 3px black;
     /* background-color: rgba(0, 0, 0, .50); */
-    width: 57%;
+    /* width: 57%;
     right: 18%; 
-    top: 31%;
+    top: 31%; */
 }
 
 #p2 {
