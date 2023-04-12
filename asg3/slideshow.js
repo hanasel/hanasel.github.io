@@ -1,3 +1,11 @@
+/*
+Hana Selmani, Majid Ibrahim, Mira Saleh, Aiya Sartbayeva
+Communications Lab
+Assignment 3 - Audio
+JavaScript file
+*/
+
+
 //get the height and width of the window
 let height = window.innerHeight;
 let width = window.innerWidth;
@@ -11,6 +19,7 @@ let tl = new TimelineMax({onUpdate:updatePercentage});
 // the scenes for each page define the scrolling activity of that page
 const controller = new ScrollMagic.Controller();
 
+// animation of each of the names
 tl.from('#p3', 0.5, {y:100, opacity: 0});
 tl.from('#p4', 0.5, {y:100, opacity: 0});
 tl.from('#p5', 0.5, {y:100, opacity: 0});
@@ -45,6 +54,7 @@ let currentImage = 0;
 //create a variable to store the image element
 let imageElement = document.getElementById("slideshow");
 
+//create a variable to store the page 2 element
 let pg2 = document.getElementById("page-2");
 
 
@@ -58,9 +68,8 @@ function changeImage() {
     }
     //increment the current image
     currentImage++;
-    //if the current image is greater than the number of images, reset the current image to 0
-    
-    // console.log(currentImage, times[currentImage]);
+
+    //if the current image is greater than the number of images, hide the image element
     if (currentImage <= images.length) {
         setTimeout(changeImage, times[currentImage]);
     }
@@ -70,7 +79,9 @@ function changeImage() {
     
 }
 
+//add an event listener to the image element to start the slideshow when the image is clicked
 imageElement.addEventListener('click', () => {
+    // Play the audio
     const audio = document.getElementById("myAudio");
     audio.play();
     // Show the first image
