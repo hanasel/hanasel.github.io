@@ -27,7 +27,7 @@ function change(){
     let sectionNum = 0;
 
     // console.log(sectionNum);
-    console.log(width);
+    console.log(footerHeight.bottom);
     // console.log("home:",homeHeight.top);
     // console.log("about:",aboutHeight.top);
     // console.log("work:",workHeight.top);
