@@ -64,7 +64,7 @@ function change(){
 	}
 
 	// Change the background color of the 'nav-btn' element corresponding to the current section to black
-	navButtons[sectionNum].style.color = 'white';
+	navButtons[sectionNum].style.color = 'white'; 
 }
 
 function animate(){
