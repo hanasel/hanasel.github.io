@@ -1,36 +1,44 @@
+/* 
+Hana Selmani
+10/05/2023
+Communications Lab
+Final Project - Portfolio Website 
+*/
+
+/* setting fonts and colors */
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #222;
 }
 h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
+
 /* Set the width of the sidebar to 120px */
 .navbar {
     width: 120px;
     height: 40%;
     position: fixed;
     top: 30%;
-    /* left: 20px; */
     z-index: 1;
     text-align: center;
-    /* background-color: black; */
 }
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+
+/* padding is 0 initiially, but check below for different sizes of screens */
+/* when it gets smaller, there is enough padding to make space for the navbar */
 .main {
     padding-left: 0px;
 }
 
+/* landing page text */
 .greeting {
     float: left;
     width: 50%;
     margin-top: 28%;
     color: white;
-    /* padding: 50px; */
-    /* margin-left: 120px; */
 }
   
+/* headshot container */
 .image-container {
-    /* background-color: #e5e5e5; */
     float: left;
     width: 50%;
     padding: 15px;
@@ -43,23 +51,25 @@ h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     padding-right: 64px;
 }
 
+/* add border to headshot */
 #headshot {
-    /* margin: 0 auto; */
     border: white 5px solid;
     border-radius: 30px;
 }
 
+/* individual navbar button properties */
 .navbar-btn {
     color: rgb(124, 124, 124);
     text-decoration: none;
     transition: all .3s ease-Out;
 } 
 
-/* navbar button */
+/* navbar button when hovered over */
 .navbar-btn:hover {
     color: white !important; 
 } 
 
+/* for sections which have an image background */
 .img-section {
     height: 100%;
     width: 100%;
@@ -69,6 +79,7 @@ h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     background-image: url('bg.png') !important;
 }
 
+/* for sections which are text focused */
 .text-section {
     padding-top: 10%;
     padding-bottom: 15%;
@@ -78,10 +89,13 @@ h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 	align-items: center;
     color: white;
 }
+
+/* making space for the navbar */
 .content {
     margin-left: 120px;
 }
 
+/* animated eye properties */
 #btn {
     font-size: 38px;
     color: white;
@@ -89,16 +103,16 @@ h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     position: absolute;
     padding-top: 12%;
     visibility: hidden;
-    /* top: 200%; */
     left: 3%;
 
 }
 
+/* padding the work section */
 #myWork {
-    /* padding-top: 5%; */
     padding-bottom: 40%;
 }
 
+/* buttons for assignments */
 .asgs {
     text-decoration: none;
     color: white;
@@ -108,9 +122,12 @@ h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     transition: all .3s ease-Out;
 }
 
+/* hover effects */
 .asgs:hover {
     color: #222;
 }
+
+/* individual button placements */
 
 #paw {
     left: 46%;
@@ -131,17 +148,7 @@ h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     left: 32%;
 }
 
-/* #circle {
-    background-color: white;
-    border-radius: 100%;
-    width: 500px;
-    height: 500px;
-    position: absolute;
-    padding-top: 12%;
-    left: 30%;
-    display: none;
-} */
-
+/* button to make the assignment buttons appear */
 .button {
     position: absolute;
     visibility: hidden;
@@ -167,14 +174,15 @@ h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     position: relative;
     overflow: hidden;
     cursor: pointer;
-  }
-  
-  #button-3 a {
+}
+
+#button-3 a {
     position: relative;
     transition: all .45s ease-Out;
-  }
-  
-  #circle {
+}
+ 
+/* circle inside the button */
+#circle {
     width: 0%;
     height: 0%;
     opacity: 0;
@@ -185,38 +193,45 @@ h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     transition: all .5s ease-Out;
     top: 20px;
     left: 70px;
-  }
+}
   
-  #button-3:hover #circle {
+/* hover effect */
+#button-3:hover #circle {
     width: 200%;
     height: 500%;
     opacity: 1;
     top: -70px;
     left: -70px;
-  }
+}
   
-  #button-3:hover a {
+#button-3:hover a {
     color: #2D3142;
-  }
+}
 
-  #contact {
+/* padding contact section */
+#contact {
     padding-top: 10%;
     padding-bottom: 4%;
-  }
+}
+
+/* if width is less than 1200px, make space for navbar */
 @media only screen and (max-width: 1200px) 
 {
     .main{padding-left: 120px !important;}
 }
 
 /* Remove margins from "page content" on small screens */
+/* position well for small screens */
 @media only screen and (max-width: 600px) 
 {
     .main{padding-left: 10% !important}
+    
     .greeting {
         margin-top: 2%;
         margin-left: 0;
         text-align: center;
     }
+    /* remove the side-by-side sections */
     .greeting, .image-container {
         width: 100%;
     }
